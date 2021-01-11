@@ -3,7 +3,7 @@ let db = require("../models/index.js");
 
 mongoose.connect("mongodb://localhost/workout", {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useUnifiedTopology: true
 });
 
 let workoutSeed = [
